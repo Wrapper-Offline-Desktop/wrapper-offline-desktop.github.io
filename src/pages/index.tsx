@@ -1,18 +1,47 @@
 import * as React from 'react';
 import Layout from '../components/layout';
+import { Button } from 'react-bootstrap';
+import Video1 from '../images/caillou1.gif';
+import Video2 from '../images/caillou2.gif';
+import Video3 from '../images/caillou3.gif';
 
 const IndexPage = () => {
-  const nav = [
-    {
-      name: 'Home',
-      link: '/',
-      active: true,
-    },
-  ];
+  const videos = [Video1, Video2, Video3];
+  const [video, setVideo] = React.useState(videos[0]);
+
+  React.useEffect(() => {
+    let i = 0;
+
+    const timerForVideo = window.setInterval(() => {
+      setVideo(videos[i++]);
+      if (i > 2) {
+        i = 0;
+      }
+    }, 2500);
+
+    return () => {
+      window.clearInterval(timerForVideo);
+    };
+  }, []);
 
   return (
-    <Layout nav={nav}>
-      <h1>Hello world!</h1>
+    <Layout title="Home">
+      <div
+        className="text-center text-white rounded-lg"
+        style={{
+          padding: '10.0rem',
+          backgroundSize: 'cover',
+          backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 150%), linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(${video})`,
+          minHeight: '100vh',
+        }}
+      >
+        <h1 className="display-4">Wrapper Offline Desktop</h1>
+        <p className="lead">The multiplatform solution for Wrapper Offline video creation.</p>
+        <hr className="my-4" />
+        <Button variant="outline-light" size="lg">
+          Get Started
+        </Button>{' '}
+      </div>
     </Layout>
   );
 };
