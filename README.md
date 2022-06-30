@@ -1,2 +1,2 @@
-# wrapper-offline-desktop.github.io
-Wrapper Offline Desktop website
+# Wrapper Offline Desktop Official Website
+Wrapper Offline Desktop website uses GatsbyJS
