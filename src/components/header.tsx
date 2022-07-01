@@ -6,7 +6,7 @@ import StyledLink from './link';
 const Header = () => {
   return (
     <header>
-      <Navbar bg="dark" variant="dark" sticky="top" expand="lg">
+      <Navbar bg="dark" variant="dark" expand="lg">
         <Container style={{ margin: '0.5rem' }}>
           <Navbar.Brand href="/">
             <img alt="" src={Icon} width="30" height="30" className="d-inline-block align-top" /> Wrapper Offline

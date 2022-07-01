@@ -1,9 +1,10 @@
 import * as React from 'react';
 import Layout from '../components/layout';
-import { Button } from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap';
 import Video1 from '../images/caillou1.gif';
 import Video2 from '../images/caillou2.gif';
 import Video3 from '../images/caillou3.gif';
+import StyledLink from '../components/link';
 
 const IndexPage = () => {
   const videos = [Video1, Video2, Video3];
@@ -38,10 +39,50 @@ const IndexPage = () => {
         <h1 className="display-4">Wrapper Offline Desktop</h1>
         <p className="lead">The multiplatform solution for Wrapper Offline video creation.</p>
         <hr className="my-4" />
-        <Button variant="outline-light" size="lg">
-          Get Started
-        </Button>{' '}
+        <StyledLink to="/downloads">
+          <Button variant="outline-light" size="lg">
+            Get Started
+          </Button>{' '}
+        </StyledLink>
       </div>
+      <Container className="px-4 py-5">
+        <h2 className="pb-2 text-center border-bottom">What is Wrapper Offline Desktop?</h2>
+        <Row className="g-4 py-5 row-cols-1 row-cols-lg-3">
+          <Col className="feature">
+            {/* <div className="feature-icon bg-primary bg-gradient">
+              <svg className="bi" width="1em" height="1em"><use xlinkHref="#collection"/></svg>
+            </div> */}
+            <h2>Multiplatform App</h2>
+            <p>
+              Wrapper Offline Desktop is a fork of Wrapper Offline that works on variety of OSes/platforms: Windows,
+              MacOS, and Linux.
+            </p>
+            <StyledLink to="/downloads">
+              <Button variant="outline-dark">Get Started</Button>{' '}
+            </StyledLink>
+          </Col>
+          <Col className="feature">
+            <h2>Self-contained</h2>
+            <p>
+              Wrapper Offline Desktop already contains all of the dependencies required to make Wrapper Offline run,
+              even Flash Player!
+            </p>
+            <StyledLink to="/why">
+              <Button variant="outline-dark">Why Self-contained?</Button>{' '}
+            </StyledLink>
+          </Col>
+          <Col className="feature">
+            <h2>Built-in Features</h2>
+            <p>
+              Wrapper Offline Desktop has features which are built-in to make Wrapper Offline easier to use! For
+              example, a built-in screen recorder!
+            </p>
+            <StyledLink to="/why#features">
+              <Button variant="outline-dark">Features</Button>{' '}
+            </StyledLink>
+          </Col>
+        </Row>
+      </Container>
     </Layout>
   );
 };
