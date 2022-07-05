@@ -6,7 +6,7 @@ import StyledLink from '../components/link';
 const DownloadsPage = () => {
   const downloads = new Map([
     ['Windows Installer (.exe)', new Map([['64-bit', ['Google Drive', "javascript:alert('Please download the .zip file instead')"]]])],
-    ['Windows Binary (.zip)', new Map([['64-bit', ['Google Drive', "javascript:confirm('Please EXTRACT the zip file. Opening it directly will make the app not work.')?window.location.href='':[]"]]])],
+    ['Windows Binary (.zip)', new Map([['64-bit', ['Google Drive', "javascript:confirm('Please EXTRACT the zip file. Opening it directly will make the app not work.')?window.location.href='https://drive.google.com/file/d/1vW5nSjEtWbMsEiHi5jZMGBZJ96F74cby/view?usp=sharing':[]"]]])],
     ['macOS Installer (.dmg)', new Map([['64-bit / arm64', ['Google Drive', "javascript:alert('Please download the .tar.gz file instead')"]]])],
     ['macOS Binary (.tar.gz)', new Map([['64-bit / arm64', ['Google Drive', "https://drive.google.com/file/d/1fRckyj2Yg88hEu4S-HusHPkagLAmAo_C/view?usp=sharing"]]])],
     ['Linux AppImage (x64)', new Map([['64-bit', ['Nothing', "javascript:alert('Wrapper Offline Desktop isn\\\'t released for Linux, yet.')"]]])],
