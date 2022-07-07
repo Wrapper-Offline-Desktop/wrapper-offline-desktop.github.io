@@ -31,6 +31,11 @@ const Header = () => {
                 </Nav.Link>
               </StyledLink>
               <Nav.Link href="javascript:alert('Has not been made public, yet.')">Github</Nav.Link>
+              <StyledLink to="/discord">
+                <Nav.Link as="span" eventKey="discord">
+                  Discord
+                </Nav.Link>
+              </StyledLink>
             </Nav>
           </Navbar.Collapse>
         </Container>
