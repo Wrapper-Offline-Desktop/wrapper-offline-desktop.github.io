@@ -7,7 +7,12 @@ const DownloadsPage = () => {
   const downloads = new Map([
     [
       'Windows Installer (.exe)',
-      new Map([['64-bit', ['Google Drive', "https://drive.google.com/file/d/1QP8uK8nr5DT3t7HH8gASHllq13vTIvlL/view?usp=sharing"]]]),
+      new Map([
+        [
+          '64-bit',
+          ['Google Drive', 'https://drive.google.com/file/d/1QP8uK8nr5DT3t7HH8gASHllq13vTIvlL/view?usp=sharing'],
+        ],
+      ]),
     ],
     [
       'Windows Binary (.zip)',
@@ -23,14 +28,22 @@ const DownloadsPage = () => {
     ],
     [
       'macOS Installer (.dmg)',
-      new Map([['64-bit / arm64', ['Google Drive', "https://drive.google.com/file/d/1LTFjAF1ZyaeY28DixVxKRGqBIJIFqiMZ/view?usp=sharing"]]]),
+      new Map([
+        [
+          '64-bit / arm64',
+          ['Google Drive', 'https://drive.google.com/file/d/1LTFjAF1ZyaeY28DixVxKRGqBIJIFqiMZ/view?usp=sharing'],
+        ],
+      ]),
     ],
     [
       'macOS Binary (.tar.gz)',
       new Map([
         [
           '64-bit / arm64',
-          ['Google Drive', 'javascript:alert(\'The .tar.gz file is going to be released later; for now, use the macOS installer.\')'],
+          [
+            'Google Drive',
+            "javascript:alert('The .tar.gz file is going to be released later; for now, use the macOS installer.')",
+          ],
         ],
       ]),
     ],
@@ -130,7 +143,9 @@ const DownloadsPage = () => {
                   <td>{platform}</td>
                   <td>{arch}</td>
                   <td>
-                    <a href={olderDownloads.get(platform)?.get(arch)?.at(1)}>{olderDownloads.get(platform)?.get(arch)?.at(0)}</a>
+                    <a href={olderDownloads.get(platform)?.get(arch)?.at(1)}>
+                      {olderDownloads.get(platform)?.get(arch)?.at(0)}
+                    </a>
                   </td>
                 </tr>
               )),
