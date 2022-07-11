@@ -19,10 +19,7 @@ const DownloadsPage = () => {
       new Map([
         [
           '64-bit',
-          [
-            'Google Drive',
-            "javascript:alert('The .zip file is going to be released later; for now, use the Windows installer.')",
-          ],
+          ['Google Drive', 'https://drive.google.com/file/d/14rTgAq3WnBtA1JgQ0HDr-1sUhzu9kkoc/view?usp=sharing'],
         ],
       ]),
     ],
@@ -50,7 +47,10 @@ const DownloadsPage = () => {
     [
       'Linux AppImage (x64)',
       new Map([
-        ['64-bit', ['Nothing', "javascript:alert('Wrapper Offline Desktop isn\\'t released for Linux, yet.')"]],
+        [
+          '64-bit',
+          ['Nothing', "javascript:alert('Wrapper Offline Desktop of this version will come soon for Linux.')"],
+        ],
       ]),
     ],
     [
@@ -82,14 +82,11 @@ const DownloadsPage = () => {
       new Map([
         [
           '64-bit / arm64',
-          ['Google Drive', 'https://drive.google.com/file/d/1fRckyj2Yg88hEu4S-HusHPkagLAmAo_C/view?usp=sharing'],
+          [
+            'Google Drive',
+            "javascript:confirm('This may not work for some people, please use the newer version if this doesn\\'t work.')?window.location.href='https://drive.google.com/file/d/1fRckyj2Yg88hEu4S-HusHPkagLAmAo_C/view?usp=sharing':[]",
+          ],
         ],
-      ]),
-    ],
-    [
-      'Linux AppImage (x64)',
-      new Map([
-        ['64-bit', ['Nothing', "javascript:alert('Wrapper Offline Desktop isn\\'t released for Linux, yet.')"]],
       ]),
     ],
   ]);
