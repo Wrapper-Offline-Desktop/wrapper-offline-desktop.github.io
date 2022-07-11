@@ -58,7 +58,7 @@ const DownloadsPage = () => {
       new Map([
         [
           'Source',
-          ['Github', 'https://github.com/Wrapper-Offline-Desktop/Wrapper-Offline-Desktop/archive/refs/heads/beta.zip'],
+          ['Github', 'https://github.com/Wrapper-Offline-Desktop/Wrapper-Offline-Desktop/archive/refs/heads/main.zip'],
         ],
       ]),
     ],
