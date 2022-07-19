@@ -18,7 +18,7 @@ const Layout = ({ children, ...props }: React.PropsWithChildren<Props>) => {
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content={props.description ?? "The multiplatform solution to Wrapper Offline"} />
+        <meta name="description" content={props.description ?? 'The multiplatform solution to Wrapper Offline'} />
         <meta name="keywords" content="Multiplatform, Solution, Wrapper, Desktop, App" />
         <meta name="author" content="JackProgramsJP" />
       </Helmet>

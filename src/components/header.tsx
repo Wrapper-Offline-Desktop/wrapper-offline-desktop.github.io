@@ -35,7 +35,9 @@ const Header = () => {
                   Downloads
                 </Nav.Link>
               </StyledLink>
-              <Nav.Link target="_blank" href="https://github.com/Wrapper-Offline-Desktop/Wrapper-Offline-Desktop">Github</Nav.Link>
+              <Nav.Link target="_blank" href="https://github.com/Wrapper-Offline-Desktop/Wrapper-Offline-Desktop">
+                Github
+              </Nav.Link>
               <StyledLink to="/discord">
                 <Nav.Link as="span" eventKey="discord">
                   Discord

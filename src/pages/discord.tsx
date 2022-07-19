@@ -8,7 +8,8 @@ const DiscordPage = () => {
     <Layout title="Discord">
       <Container className="my-5">
         <Alert key="warning" variant="warning">
-          Due to the deprecation of Wrapper Offline Desktop, the discord server is no longer active and will not contain sufficient members.
+          Due to the deprecation of Wrapper Offline Desktop, the discord server is no longer active and will not contain
+          sufficient members.
         </Alert>
         <Alert key="warning" variant="warning">
           Here is <Link to="/reason">why</Link> Wrapper Offline Desktop is not being maintained anymore.

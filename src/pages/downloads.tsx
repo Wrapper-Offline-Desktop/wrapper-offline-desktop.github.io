@@ -75,7 +75,8 @@ const DownloadsPage = () => {
     <Layout title="Downloads">
       <Container className="my-5">
         <Alert key="warning" variant="warning">
-          Due to the deprecation of Wrapper Offline Desktop, there won't be any new updates. There is no guarantee that the download links will still exist.
+          Due to the deprecation of Wrapper Offline Desktop, there won't be any new updates. There is no guarantee that
+          the download links will still exist.
         </Alert>
         <Alert key="warning" variant="warning">
           Here is <Link to="/reason">why</Link> Wrapper Offline Desktop is not being maintained anymore.

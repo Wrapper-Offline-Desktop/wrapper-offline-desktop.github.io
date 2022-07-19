@@ -8,7 +8,8 @@ const WhyPage = () => {
   return (
     <Layout title="Why?">
       <Alert key="warning" variant="warning">
-        Due to the deprecation of Wrapper Offline Desktop, this page won't be updated anymore. This page was going to be updated, as it is WIP, but due to deprecation, it will remain in WIP.
+        Due to the deprecation of Wrapper Offline Desktop, this page won't be updated anymore. This page was going to be
+        updated, as it is WIP, but due to deprecation, it will remain in WIP.
       </Alert>
       <Alert key="warning" variant="warning">
         Here is <Link to="/reason">why</Link> Wrapper Offline Desktop is not being maintained anymore.
