@@ -20,6 +20,11 @@ const Header = () => {
                   Home
                 </Nav.Link>
               </StyledLink>
+              <StyledLink to="/reason">
+                <Nav.Link as="span" eventKey="reason">
+                  Reason
+                </Nav.Link>
+              </StyledLink>
               <StyledLink to="/why">
                 <Nav.Link as="span" eventKey="why">
                   Why?
@@ -30,7 +35,7 @@ const Header = () => {
                   Downloads
                 </Nav.Link>
               </StyledLink>
-              <Nav.Link href="javascript:alert('Has not been made public, yet.')">Github</Nav.Link>
+              <Nav.Link target="_blank" href="https://github.com/Wrapper-Offline-Desktop/Wrapper-Offline-Desktop">Github</Nav.Link>
               <StyledLink to="/discord">
                 <Nav.Link as="span" eventKey="discord">
                   Discord

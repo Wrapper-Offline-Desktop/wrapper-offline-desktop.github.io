@@ -1,7 +1,8 @@
 import * as React from 'react';
 import Layout from '../components/layout';
-import { Button, Container, Table } from 'react-bootstrap';
+import { Alert, Button, Container, Table } from 'react-bootstrap';
 import StyledLink from '../components/link';
+import { Link } from 'gatsby';
 
 const DownloadsPage = () => {
   const downloads = new Map([
@@ -29,27 +30,6 @@ const DownloadsPage = () => {
         [
           '64-bit / arm64',
           ['Google Drive', 'https://drive.google.com/file/d/1LTFjAF1ZyaeY28DixVxKRGqBIJIFqiMZ/view?usp=sharing'],
-        ],
-      ]),
-    ],
-    [
-      'macOS Binary (.tar.gz)',
-      new Map([
-        [
-          '64-bit / arm64',
-          [
-            'Google Drive',
-            "javascript:alert('The .tar.gz file is going to be released later; for now, use the macOS installer.')",
-          ],
-        ],
-      ]),
-    ],
-    [
-      'Linux AppImage (x64)',
-      new Map([
-        [
-          '64-bit',
-          ['Nothing', "javascript:alert('Wrapper Offline Desktop of this version will come soon for Linux.')"],
         ],
       ]),
     ],
@@ -94,6 +74,12 @@ const DownloadsPage = () => {
   return (
     <Layout title="Downloads">
       <Container className="my-5">
+        <Alert key="warning" variant="warning">
+          Due to the deprecation of Wrapper Offline Desktop, there won't be any new updates. There is no guarantee that the download links will still exist.
+        </Alert>
+        <Alert key="warning" variant="warning">
+          Here is <Link to="/reason">why</Link> Wrapper Offline Desktop is not being maintained anymore.
+        </Alert>
         <h1>Downloads</h1>
         <p className="lead">Latest version: v0.2.0-preview+3</p>
         <p>Download the Wrapper Offline Desktop source code or an installer, and make videos today.</p>

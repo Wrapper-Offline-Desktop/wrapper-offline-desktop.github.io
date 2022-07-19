@@ -1,10 +1,11 @@
 import * as React from 'react';
 import Layout from '../components/layout';
-import { Button, Col, Container, Row } from 'react-bootstrap';
+import { Alert, Button, Col, Container, Row } from 'react-bootstrap';
 import Video1 from '../images/caillou1.gif';
 import Video2 from '../images/caillou2.gif';
 import Video3 from '../images/caillou3.gif';
 import StyledLink from '../components/link';
+import { Link } from 'gatsby';
 
 const IndexPage = () => {
   const videos = [Video1, Video2, Video3];
@@ -27,6 +28,12 @@ const IndexPage = () => {
 
   return (
     <Layout title="Home">
+      <Alert key="warning" variant="warning">
+        Wrapper Offline Desktop is deprecated now, meaning it is not maintained anymore.
+      </Alert>
+      <Alert key="warning" variant="warning">
+        Here is <Link to="/reason">why</Link> Wrapper Offline Desktop is not being maintained anymore.
+      </Alert>
       <div
         className="text-center text-white rounded-lg"
         style={{

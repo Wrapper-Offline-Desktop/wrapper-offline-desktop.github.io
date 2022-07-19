@@ -1,11 +1,18 @@
 import * as React from 'react';
 import Layout from '../components/layout';
-import { Container } from 'react-bootstrap';
+import { Alert, Container } from 'react-bootstrap';
+import { Link } from 'gatsby';
 
-const NotFoundPage = () => {
+const DiscordPage = () => {
   return (
     <Layout title="Discord">
       <Container className="my-5">
+        <Alert key="warning" variant="warning">
+          Due to the deprecation of Wrapper Offline Desktop, the discord server is no longer active and will not contain sufficient members.
+        </Alert>
+        <Alert key="warning" variant="warning">
+          Here is <Link to="/reason">why</Link> Wrapper Offline Desktop is not being maintained anymore.
+        </Alert>
         <h1 className="border-bottom pb-3 mb-4">Discord</h1>
         <div className="d-flex justify-content-center container">
           <iframe
@@ -22,4 +29,4 @@ const NotFoundPage = () => {
   );
 };
 
-export default NotFoundPage;
+export default DiscordPage;
