@@ -38,6 +38,7 @@ import I32 from '../images/32.png';
 import I33 from '../images/33.gif';
 import I34 from '../images/34.png';
 import I35 from '../images/35.gif';
+import I36 from '../images/36.png';
 
 import Evidence from '../images/evidence.mp4';
 
@@ -295,6 +296,15 @@ const ReasonPage = () => {
             I tried talking to Octanuary. I wanted to chat this out with him, and be cool with him.
           </p>
           <p>He never responded back, though.</p>
+          <img src={I36} width="300" height="auto" />
+          <p className="mt-5">
+            In the image above, you can see that MKAnimates has said, "{'['}Curzon{']'} is really nice."
+          </p>
+          <p>
+            Instead, Octanuary sends a "blender intro" containing the "White n*gga" text. That is his response of when
+            something good was said about me. He probably means it in a bad way, and this shows that Octanuary has no
+            remorse for me, yet I never did anything wrong to him.
+          </p>
           <p className="mt-5">
             Here is a 5 minute video of all the evidence {'('}but if you already looked at the evidence and stuff
             before, you can skip this video because it's long, but it covers everything{')'}.
@@ -335,6 +345,12 @@ const ReasonPage = () => {
           </p>
           <p>Appreciate what you have.</p>
           <p> - Curzon, JackProgramsJP, JackMCGamer</p>
+          <hr className="my-5" />
+          <h2 className="my-4" id="updates">
+            Updates
+          </h2>
+          <h3 className="my-3">7/21/22:</h3>
+          <p>MKAnimates has apologized to me about this.</p>
         </div>
       </Container>
     </Layout>
