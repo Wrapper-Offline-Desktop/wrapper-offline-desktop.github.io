@@ -350,7 +350,7 @@ const ReasonPage = () => {
             Updates
           </h2>
           <h3 className="my-3">7/21/22:</h3>
-          <p>MKAnimates has apologized to me about this.</p>
+          <p>Octanuary has added more drama, as you see there's new evidence of him.</p>
         </div>
       </Container>
     </Layout>
